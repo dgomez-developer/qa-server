@@ -22,7 +22,7 @@ class QaController {
 
     @PostMapping(value = ["/question"], consumes = ["application/json"])
     fun createQuestion(@RequestBody question: QuestionModel, response: HttpServletResponse): QuestionModel {
-        val questionCreated = repository.save(question)
+        val questionCreated = repository.save(QuestionModel(question = question.question, contact = question.contact))
         questionCreated?.let {
             response.status = HttpStatus.CREATED.value()
         }

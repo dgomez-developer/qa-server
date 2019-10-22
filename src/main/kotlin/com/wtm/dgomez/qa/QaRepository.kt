@@ -1,7 +1,7 @@
 package com.wtm.dgomez.qa
 
-import org.springframework.data.mongodb.repository.MongoRepository
+import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface QaRepository : MongoRepository<QuestionModel, Int>
+interface QaRepository : JpaRepository<QuestionModel, Int>

@@ -31,6 +31,10 @@ class OpenApiDoc: WebMvcConfigurer {
 
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/")
+
+        //This is for graphiql works
+        registry.addResourceHandler("/vendor/**")
+                .addResourceLocations("classpath:/static/vendor/")
     }
 
 }

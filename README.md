@@ -1,10 +1,28 @@
-# qa-server
+# Questions&amp;Answers server
 
 Repository that stores the source code of the Q&amp;A server.
 
 Very simple Spring Boot server coded in Kotlin that uses Gradle as dependencies manager.
 
+The API support REST & GraphQL requests.
+
 Contains a Procfile to deploy the server in Heroku.
+
+## How to run
+
+```aidl
+./gradlew bootRun
+```
+
+The following documentation will be available:
+
+* Swagger documentation: http://localhost:500/swagger-ui.html.
+* GraphQL server: http://localhost:5000/graphql
+* GraphQL Playground: http://localhost:5000/playground
+* GraphiQL: http://localhost:5000/graphiql
+* GraphQL Voyager: http://localhost:5000/voyager
+
+
 
 ## License
 

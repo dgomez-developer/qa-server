@@ -1,0 +1,15 @@
+type QuestionModel {
+    id: ID!,
+    question: String!,
+    contact: String
+}
+
+# The Root Query for the application
+type Query {
+    getRecentQa: [QuestionModel]!
+}
+
+# The Root Mutation for the application
+type Mutation {
+    writeQuestion(question: String!, contact: String) : QuestionModel!
+}
